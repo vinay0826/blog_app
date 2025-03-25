@@ -33,6 +33,7 @@ export function Signup_comp() {
           );
     
           // Log and alert success
+          console.log(response);
           navigate("/Signin");
         } catch (error) {
           // Handle errors
