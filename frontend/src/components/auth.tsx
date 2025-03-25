@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { ClipLoader } from "react-spinners";
 export function Signup_comp() {
     const [postValues, setPostValues] = useState({
         name: "",
@@ -16,8 +17,10 @@ export function Signup_comp() {
             [name]: value, // Dynamically update the field based on name
         }));
     }
+    const [isLoading, setIsLoading] = useState(false);
 
     async function handleSubmit() {
+        setIsLoading(true);
         try {
           // Define the request body
           const requestBody = {
@@ -38,10 +41,20 @@ export function Signup_comp() {
         } catch (error) {
           // Handle errors
           console.error("Error sending request:", error);
+          setIsLoading(false);
           alert("Failed to send request. Check console for details.");
+        }finally{
+            setIsLoading(false);
         }
       }
 
+      if (isLoading) {
+        return (
+          <div className="fixed inset-0 flex items-center justify-center bg-gray-900">
+            <ClipLoader color="#3b82f6" size={50} />
+          </div>
+        );
+      }
     return (
         <div>
             <div>CREATE AN ACCOUNT</div>
@@ -54,6 +67,11 @@ export function Signup_comp() {
                 <span className="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
                 <span className="relative text-white">SUBMIT</span></button>
                 </div>
+                {isLoading && (
+                <div className="mt-4 flex justify-center">
+                <ClipLoader color="#3b82f6" size={35} />
+                </div>
+                    )}
         </div>)
 }
 
