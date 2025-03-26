@@ -1,8 +1,10 @@
+import { Signin_comp } from "../components/signin.tsx";
+
 export function Signin() {
 
     return (
       <>
-       signin
+       <Signin_comp/>
       </>
     )
   }
