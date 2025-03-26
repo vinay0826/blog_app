@@ -24,7 +24,11 @@ export function Signup_comp() {
     setIsLoading(true);
     setFailed(false);
     try {
-      const requestBody = { ...postValues };
+      const requestBody = const requestBody = {
+        name : postValues.name.trimEnd(),
+        email : postValues.email.trimEnd(),
+        password : postValues.password.trimEnd()
+      };
       console.log(requestBody);
       const res = await axios.post(
         "https://backend.nalagatlavinay26.workers.dev/api/v1/user/signup",
