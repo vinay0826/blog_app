@@ -24,7 +24,7 @@ export function Signup_comp() {
     setIsLoading(true);
     setFailed(false);
     try {
-      const requestBody = const requestBody = {
+      const requestBody = {
         name : postValues.name.trimEnd(),
         email : postValues.email.trimEnd(),
         password : postValues.password.trimEnd()
