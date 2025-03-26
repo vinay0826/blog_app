@@ -45,12 +45,12 @@ user_Router.post('/signin',async (c)=>{
   if(!body.email || !body.password){
     return c.text('enter all the feilds',400);
   }
-  console.log(body)
   const user = await prisma.user.findUnique({
     where:{
       email:body.email
     }
   })
+  console.log(user);
   if(!user?.password || !user.email){
     return c.text("no user found")
   }
