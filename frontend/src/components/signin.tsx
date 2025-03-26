@@ -28,8 +28,8 @@ export function Signin_comp() {
     set_loginfailed(false);
     try {
       const requestBody = {
-        email: postValues.email,
-        password: postValues.password,
+        email: postValues.email.trimEnd(),
+        password: postValues.password.trimEnd(),
       };
       console.log(requestBody);
       const response = await axios.post(
