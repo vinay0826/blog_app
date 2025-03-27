@@ -39,7 +39,7 @@ export function Mainscreen(){
         {/* Floating Code Fragments */}
         <div className="absolute inset-0 pointer-events-none">
           <span className="text-green-300 text-sm absolute top-1/4 left-1/5 animate-code-fragment"></span>
-          <span className="text-blue-300 text-sm absolute bottom-1/3 right-1/4 animate-code-fragment-delay"></span>
+          <span className="text-blue-300 text-sm absolute bottom-1/3 right-1/4 animate-code-fragment-delay">@vinnu</span>
         </div>
       </div>
     </div>
