@@ -26,7 +26,7 @@ export function Mainscreen(){
 
         {/* Subtext: Code Pulse */}
         <p className="text-lg sm:text-xl md:text-2xl text-gray-300 animate-code-pulse">
-          Contact admin vinnu for access
+          
         </p>
 
         {/* 3D Matrix Cube */}
@@ -38,8 +38,8 @@ export function Mainscreen(){
 
         {/* Floating Code Fragments */}
         <div className="absolute inset-0 pointer-events-none">
-          <span className="text-green-300 text-sm absolute top-1/4 left-1/5 animate-code-fragment">server is under development</span>
-          <span className="text-blue-300 text-sm absolute bottom-1/3 right-1/4 animate-code-fragment-delay">RUNNING...</span>
+          <span className="text-green-300 text-sm absolute top-1/4 left-1/5 animate-code-fragment"></span>
+          <span className="text-blue-300 text-sm absolute bottom-1/3 right-1/4 animate-code-fragment-delay"></span>
         </div>
       </div>
     </div>
