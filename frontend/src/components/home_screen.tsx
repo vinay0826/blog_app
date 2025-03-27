@@ -16,7 +16,7 @@ export function Homescreen() {
       <div className="relative z-10 w-full max-w-2xl flex flex-col items-center">
         {/* Title: Floating Holo-Text */}
         <h1 className="text-6xl md:text-7xl font-extrabold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-purple-400 to-pink-500 animate-holo-text mb-12">
-          TECHLOGGER
+          TECHLOGG
         </h1>
 
         {/* Tagline: Glitch Effect */}
