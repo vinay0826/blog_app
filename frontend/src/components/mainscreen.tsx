@@ -21,12 +21,12 @@ export function Mainscreen(){
       <div className="relative z-10 flex flex-col items-center text-center transform perspective-1000">
         {/* Main Text: Glitchy Matrix */}
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-wider text-green-400 animate-matrix-glitch mb-6 md:mb-8">
-          UNDER DEVELOPMENT
+          you are not authorized!
         </h1>
 
         {/* Subtext: Code Pulse */}
         <p className="text-lg sm:text-xl md:text-2xl text-gray-300 animate-code-pulse">
-          Coming Soon...
+          Contact admin vinnu for access
         </p>
 
         {/* 3D Matrix Cube */}
@@ -38,7 +38,7 @@ export function Mainscreen(){
 
         {/* Floating Code Fragments */}
         <div className="absolute inset-0 pointer-events-none">
-          <span className="text-green-300 text-sm absolute top-1/4 left-1/5 animate-code-fragment">10 PRINT "HELLO"</span>
+          <span className="text-green-300 text-sm absolute top-1/4 left-1/5 animate-code-fragment">server is under development</span>
           <span className="text-blue-300 text-sm absolute bottom-1/3 right-1/4 animate-code-fragment-delay">RUNNING...</span>
         </div>
       </div>
