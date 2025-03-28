@@ -21,12 +21,12 @@ export function Mainscreen(){
       <div className="relative z-10 flex flex-col items-center text-center transform perspective-1000">
         {/* Main Text: Glitchy Matrix */}
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-wider text-green-400 animate-matrix-glitch mb-6 md:mb-8">
-          you are not authorized!
+          Access Denied!
         </h1>
 
         {/* Subtext: Code Pulse */}
         <p className="text-lg sm:text-xl md:text-2xl text-gray-300 animate-code-pulse">
-          
+          contact admin for access
         </p>
 
         {/* 3D Matrix Cube */}
